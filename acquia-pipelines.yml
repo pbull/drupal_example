@@ -6,7 +6,7 @@ events:
           type: script
           script:
             - mkdir docroot
-            - echo "Hello, Pipelines!" > docroot/hello.txt
+            - echo "Hello, My Dear Pipelines!" > docroot/hello.txt
       - deploy:
           script:
             - pipelines-deploy
