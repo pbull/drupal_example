@@ -10,8 +10,13 @@ events:
       - deploy:
           script:
             - pipelines-deploy
-   pr-closed:
-      steps:
-        - deploy:
-            script:
-              - pipelines-deploy
+  pr-closed:
+    steps:
+      - deploy:
+          script:
+            - pipelines-deploy
+  pr-merged:
+    steps:
+      - deploy:
+          script:
+            - pipelines-deploy
