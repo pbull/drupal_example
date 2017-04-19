@@ -6,7 +6,7 @@ events:
           type: script
           script:
             - mkdir docroot
-            - echo "Hello, My Dear Pipelines!" > docroot/hello.txt
+            - echo "Hello. My name is Inigo Montoya. You killed my build process. Prepare to die." > docroot/hello.txt
       - deploy:
           script:
             - pipelines-deploy
